@@ -2,13 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yuzhou Chen</title>
+  <title>Yuzhou Chen – Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .profile-pic {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .profile-pic img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+    .pdf-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 95vh;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 90vh;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <div class="nav-container">
       <div class="nav-left">Yuzhou Chen</div>
@@ -16,58 +53,61 @@
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <iframe src="Resume.pdf" width="100%" height="800px" style="border: none;"></iframe>
+        <a href="#resume" class="resume-btn">Resume</a>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container">
-
-    <!-- Profile Picture -->
-    <div class="profile-pic">
-      <img src="photo.heic" alt="Yuzhou Chen">
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h1>Yuzhou Chen</h1>
-      <p class="header-info">
-        Master’s Student in Electrical and Computer Engineering (Machine Learning Track)<br>
-        University of Michigan – Ann Arbor (Graduating May 2025)<br>
-        <strong>Email:</strong> <a href="mailto:yzc@umich.edu">yzc@umich.edu</a><br>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yzcc" target="_blank">linkedin.com/in/yzcc</a>
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>About Me</h2>
-      <p>
-        I'm passionate about robotics, machine learning, and building intelligent systems that perceive and interact with the world.
-        I’ve worked on grasp learning, deformable physics modeling, and planning under uncertainty.
-      </p>
-    </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>University of Michigan, Ann Arbor</strong><br>
-          M.S. in Electrical and Computer Engineering (Machine Learning)<br>
-          M.S.E. in Mechanical Engineering (Robotics and Mechatronics)<br>
-          <em>2022 – 2025</em>
-        </li>
-        <li><strong>Jilin University, Changchun, China</strong><br>
-          B.E. in Mechanical Engineering<br>
-          <em>2018 – 2022</em>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>Coming soon — check back for updates on my robotics and ML projects.</p>
-    </section>
-
+  <!-- Profile Photo -->
+  <div class="profile-pic">
+    <img src="photo.jpg" alt="Yuzhou Chen">
   </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm Yuzhou Chen, a dual-degree Master’s student in Mechanical Engineering and Electrical & Computer Engineering at the University of Michigan.
+      I specialize in robotics, machine learning, and perception-driven control systems. I’ve led research in grasp learning, deformable object modeling, and motion planning using transformer-based architectures and RL.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of Michigan, Ann Arbor</strong><br>
+        M.S. in Electrical and Computer Engineering (Machine Learning), GPA: 3.73/4.0<br>
+        M.S.E. in Mechanical Engineering (Robotics and Mechatronics), GPA: 3.73/4.0<br>
+        <em>Aug 2022 – May 2025</em>
+      </li>
+      <li><strong>Jilin University, Changchun, China</strong><br>
+        B.E. in Mechanical Engineering, GPA: 87.1/100<br>
+        <em>Aug 2018 – Jun 2022</em>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Learning-Based Motion Planning and Control for Robotics</strong><br>
+        Built a VAE + GP + MPPI model for trajectory optimization in simulated robot environments; combined deep learning and RL with real-time dynamics modeling.
+      </li>
+      <li><strong>Physics-Guided Grasp Learning</strong><br>
+        Used BubbleTouch tactile sensors and 3D point cloud fusion to build occlusion-aware grasp models; simulated deformation responses for stable grasp evaluation.
+      </li>
+      <li><strong>Vehicle Trajectory Prediction Using GCNs</strong><br>
+        Created GaiaNet, a graph-based spatiotemporal model trained on the Apollo Scape dataset to forecast agent interactions in traffic scenes.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Resume Viewer -->
+  <section id="resume" class="pdf-container">
+    <iframe src="Resume.pdf" title="Yuzhou Chen's Resume"></iframe>
+  </section>
+
 </body>
 </html>
