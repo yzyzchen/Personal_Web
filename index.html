@@ -4,86 +4,70 @@
   <meta charset="UTF-8">
   <title>Yuzhou Chen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #333;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      font-size: 2.5em;
-      color: #1a1a1a;
-    }
-    h2 {
-      color: #005f99;
-      margin-top: 40px;
-    }
-    a {
-      color: #0077b5;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    img.profile {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Yuzhou Chen</h1>
-  <img src="photo.heic" alt="Yuzhou Chen" class="profile">
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">Yuzhou Chen</div>
+      <div class="nav-right">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="Resume.pdf" target="_blank" class="resume-btn">Resume</a>
+      </div>
+    </div>
+  </nav>
 
-  <p>
-    Master’s Student in Mechanical Engineering & Electrical and Computer Engineering (Machine Learning Track)<br>
-    University of Michigan – Ann Arbor (Graduating May 2025)<br>
-    <strong>Email:</strong> <a href="mailto:yzc@umich.edu">yzc@umich.edu</a><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yzcc" target="_blank">linkedin.com/in/yzcc</a><br>
-    <strong>Resume:</strong> <a href="Resume.pdf" target="_blank">Download PDF</a>
-  </p>
+  <!-- Main Content -->
+  <div class="container">
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm passionate about robotics, machine learning, and building intelligent systems that perceive and interact with the world. 
-      I’ve developed systems for tactile-enhanced grasping, deformable object modeling, autonomous navigation, and computer vision.
-      I'm currently based in Ann Arbor and seeking opportunities where I can apply my technical and research skills in real-world robotics challenges.
-    </p>
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+      <img src="photo.heic" alt="Yuzhou Chen">
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h1>Yuzhou Chen</h1>
+      <p class="header-info">
+        Master’s Student in Electrical and Computer Engineering (Machine Learning Track)<br>
+        University of Michigan – Ann Arbor (Graduating May 2025)<br>
+        <strong>Email:</strong> <a href="mailto:yzc@umich.edu">yzc@umich.edu</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yzcc" target="_blank">linkedin.com/in/yzcc</a>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm passionate about robotics, machine learning, and building intelligent systems that perceive and interact with the world.
+        I’ve worked on grasp learning, deformable physics modeling, and planning under uncertainty.
+      </p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of Michigan, Ann Arbor</strong><br>
+          M.S. in Electrical and Computer Engineering (Machine Learning)<br>
+          M.S.E. in Mechanical Engineering (Robotics and Mechatronics)<br>
+          <em>2022 – 2025</em>
+        </li>
+        <li><strong>Jilin University, Changchun, China</strong><br>
+          B.E. in Mechanical Engineering<br>
+          <em>2018 – 2022</em>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p>Coming soon — check back for updates on my robotics and ML projects.</p>
+    </section>
+
   </div>
-
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>University of Michigan, Ann Arbor</strong><br>
-        M.S. in Electrical and Computer Engineering (Machine Learning), GPA: 3.73/4.0<br>
-        M.S.E. in Mechanical Engineering (Robotics and Mechatronics), GPA: 3.73/4.0<br>
-        <em>2022 – 2025</em>
-      </li>
-      <li><strong>Jilin University, Changchun, China</strong><br>
-        B.E. in Mechanical Engineering, GPA: 87.1/100<br>
-        <em>2018 – 2022</em>
-      </li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Projects & Research</h2>
-    <p>Details coming soon — check back for updates on my robotics and ML projects.</p>
-  </div>
-
 </body>
 </html>

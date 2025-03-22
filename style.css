@@ -1,0 +1,174 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+  }
+  
+  a {
+    color: #0077b5;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* =====================
+     CONTAINER
+  ===================== */
+  .container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+  }
+  
+  /* =====================
+     NAVIGATION
+  ===================== */
+  nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .nav-left {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
+  .nav-right a {
+    margin-left: 25px;
+    font-size: 1em;
+    color: #0077b5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover {
+    color: #005f99;
+  }
+  
+  /* Resume Button */
+  .resume-btn {
+    background-color: #0077b5;
+    color: #fff !important;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #005f99;
+    text-decoration: none;
+  }
+  
+  /* =====================
+     PROFILE PICTURE
+  ===================== */
+  .profile-pic {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* =====================
+     HEADERS & SECTIONS
+  ===================== */
+  h1 {
+    font-size: 3em;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    color: #005f99;
+    font-size: 1.8em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin: 50px 0;
+  }
+  
+  p.header-info {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 0;
+  }
+  
+  /* =====================
+     LIST STYLING
+  ===================== */
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 12px;
+  }
+  
+  /* =====================
+     RESPONSIVE STYLES
+  ===================== */
+  @media (max-width: 600px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-right {
+      margin-top: 10px;
+    }
+  
+    .nav-right a {
+      margin-left: 0;
+      margin-right: 15px;
+      display: inline-block;
+    }
+  
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+  }
