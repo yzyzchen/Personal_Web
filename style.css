@@ -31,7 +31,21 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
   }
+  .social-icons a {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+    text-decoration: none;
+  }
   
+  .social-icons a:hover {
+    color: #0077b5;
+  }
+  
+  .social-icons i {
+    margin-right: 8px;
+  }
   /* =====================
      NAVIGATION
   ===================== */
