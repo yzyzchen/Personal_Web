@@ -125,6 +125,39 @@ body {
   .nav-right a:hover {
     color: #005f99;
   }
+  .edu-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .edu-text {
+    flex: 1;
+  }
+  
+  .edu-logo img {
+    height: 80px; /* ~4 lines */
+    width: auto;
+    margin-left: 20px;
+  }
+  
+  .edu-degree {
+    font-weight: normal;
+    display: block;
+  }
+  
+  .edu-focus {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .edu-bullet {
+    display: block;
+    margin-left: 20px;
+    color: #555;
+  }
   
   .project {
     margin-bottom: 40px;
