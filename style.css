@@ -46,6 +46,40 @@ body {
   .social-icons i {
     margin-right: 8px;
   }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-link i,
+  .social-link img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .social-link a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .social-link a:hover {
+    text-decoration: underline;
+    color: #2b76c6;
+  }
+  
+  .orcid-icon {
+    border-radius: 50%;
+    object-fit: contain;
+  }
   /* =====================
      NAVIGATION
   ===================== */
