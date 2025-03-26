@@ -41,6 +41,14 @@
       margin: 60px auto;
       padding: 0 30px;
     }
+
+    #skills h3 {
+      margin-top: 20px;
+      color: #2b76c6;
+    }
+    #skills p {
+      line-height: 1.6;
+    }
     .project {
       margin-bottom: 50px;
     }
@@ -61,6 +69,16 @@
       display: block;
       margin-top: 10px;
     }
+
+    .project {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .project:last-child {
+    border-bottom: none;
+  }
   </style>
 </head>
 <body>
@@ -72,6 +90,7 @@
       <div class="nav-right">
         <a href="#about" id="nav-about">About</a>
         <a href="#education" id="nav-education">Education</a>
+        <a href="#skills">Skills</a>
         <a href="#projects" id="nav-projects">Projects</a>
         <!-- <a href="#resume" id="nav-resume" class="resume-btn">Resume</a> -->
         <a href="#resume" id="nav-resume">Resume</a>
@@ -125,6 +144,31 @@
         <em>Aug 2018 – Jun 2022</em>
       </li>
     </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    
+    <h3>Programming Languages</h3>
+    <p>Python, C++, HTML/CSS, C, SQL, MATLAB, JavaScript, Arduino</p>
+
+    <h3>MLOps and Software Tools</h3>
+    <p>
+      Deep Learning: PyTorch, GPyTorch, TensorFlow<br>
+      Data Science: NumPy, Pandas, OpenCV, matplotlib, scikit-learn<br>
+      Robotics/Simulation: ROS, IsaacLab<br>
+      RL Libraries: Gym, Stable-Baselines3<br>
+      Cloud & DevOps: Docker, AWS EC2/S3, Git
+    </p>
+
+    <h3>Machine Learning and Optimization</h3>
+    <p>
+      NLP: LLM, Transformer, BERT, GPT<br>
+      Generative Models: GANs, VAE, Diffusion Models<br>
+      Probabilistic Models: GMM, GP<br>
+      Computer Vision: SAM, DUST3R, Mask3D
+    </p>
   </section>
 
   <!-- Projects Section -->
