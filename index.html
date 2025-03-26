@@ -58,7 +58,8 @@
         <a href="#about" id="nav-about">About</a>
         <a href="#education" id="nav-education">Education</a>
         <a href="#projects" id="nav-projects">Projects</a>
-        <a href="#resume" id="nav-resume" class="resume-btn">Resume</a>
+        <!-- <a href="#resume" id="nav-resume" class="resume-btn">Resume</a> -->
+        <a href="#resume" id="nav-resume">Resume</a>
       </div>
     </div>
   </nav>
@@ -160,7 +161,7 @@
   <script>
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-right a");
-
+  
     window.addEventListener("scroll", () => {
       let current = "";
       sections.forEach(section => {
@@ -170,7 +171,7 @@
           current = section.getAttribute("id");
         }
       });
-
+  
       navLinks.forEach(link => {
         link.classList.remove("active");
         if (link.getAttribute("href") === `#${current}`) {
