@@ -160,7 +160,27 @@ body {
     margin-left: 20px;
     color: #555;
   }
-
+  .project table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .project td {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
   .project {
     margin-bottom: 40px;
   }
