@@ -160,29 +160,14 @@ body {
     margin-left: 20px;
     color: #555;
   }
-  .project table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .project td {
-    width: 50%;
-    vertical-align: top;
-    padding: 10px;
-  }
-  
-  .project img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: inline-block;
-    margin: 0 auto;
-  }
-
   .project {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .project:last-child {
+    border-bottom: none;
   }
   
   .project h3 {
@@ -203,7 +188,39 @@ body {
   .project a:hover {
     text-decoration: underline;
   }
-
+  
+  /* Base image styling (for single images) */
+  .project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  /* Table layout styling */
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .project-table td {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  /* Used inside tables and flex rows for same-height images */
+  .project-table img.auto-height-img,
+  .image-row img.auto-height-img {
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+  }
+  
+  /* Optional: Flex layout for side-by-side images (non-table) */
   .image-row {
     display: flex;
     justify-content: center;
@@ -212,12 +229,23 @@ body {
     margin-top: 10px;
   }
   
-  .image-row img.auto-height-img {
-    height: 250px;
-    width: auto;
-    object-fit: contain;
-  }
+  /* Responsive tweak for mobile layout (optional) */
+  @media (max-width: 768px) {
+    .project-table td {
+      display: block;
+      width: 100%;
+    }
   
+    .image-row {
+      flex-direction: column;
+    }
+  
+    .project-table img.auto-height-img,
+    .image-row img.auto-height-img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
   /* .project img {
     width: 100%;
     max-width: 600px;
