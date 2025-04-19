@@ -503,10 +503,10 @@
   
     window.addEventListener("scroll", () => {
       let current = "";
+  
       sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        const sectionTop = section.offsetTop - 120; // adjust for sticky nav height
+        if (window.scrollY >= sectionTop) {
           current = section.getAttribute("id");
         }
       });

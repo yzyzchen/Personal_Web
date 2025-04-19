@@ -10,6 +10,10 @@ body {
     line-height: 1.8;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
   a {
     color: #0077b5;
     text-decoration: none;
