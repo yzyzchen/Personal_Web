@@ -203,6 +203,20 @@ body {
   .project a:hover {
     text-decoration: underline;
   }
+
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .image-row img.auto-height-img {
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+  }
   
   /* .project img {
     width: 100%;
