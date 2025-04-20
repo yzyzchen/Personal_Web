@@ -221,11 +221,17 @@ body {
     vertical-align: top;
     padding: 10px;
   }
+  .project p.description {
+    text-align: left;
+    max-width: 100%;   /* allow full width */
+    width: 90%;        /* stretch it out */
+    margin: auto;
+  }
   
   /* Used inside tables and flex rows for same-height images */
   .project-table img.auto-height-img,
   .image-row img.auto-height-img {
-    height: 250px;
+    height: 300px;
     width: auto;
     object-fit: contain;
     display: inline-block;
