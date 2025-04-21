@@ -234,7 +234,9 @@ body {
     height: 300px;
     width: auto;
     object-fit: contain;
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;       /* ensures it's treated as a block */
+    margin: 0 auto;       /* centers it horizontally */
   }
   
   /* Optional: Flex layout for side-by-side images (non-table) */
