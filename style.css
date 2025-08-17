@@ -291,7 +291,7 @@ body {
   ===================== */
   .about-container {
     display: flex;
-    align-items: center;   /* vertically align photo and text */
+    align-items: left;   /* vertically align photo and text */
     justify-content: space-between;
     gap: 40px;             /* spacing between text and photo */
     margin: 60px auto;
@@ -304,12 +304,10 @@ body {
   }
   
   .profile-pic img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30vw;        /* 20% of screen width */
+  max-width: 500px;   /* don’t let it grow too large */
+  min-width: 150px;   /* don’t let it shrink too small */
+  height: auto;
   }
   
   /* =====================
