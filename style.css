@@ -27,6 +27,33 @@ body {
   /* =====================
      CONTAINER
   ===================== */
+
+  .about-container {
+  display: flex;
+  align-items: center;   /* vertically align photo and text */
+  justify-content: space-between;
+  gap: 40px;             /* spacing between text and photo */
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.about-text {
+  flex: 2;               /* take more space */
+}
+
+.profile-pic {
+  flex: 1;               /* take less space */
+  text-align: right;     /* push image to right side */
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
   .container {
     max-width: 900px;
     margin: 60px auto;
@@ -289,10 +316,6 @@ body {
   /* =====================
      PROFILE PICTURE
   ===================== */
-  .profile-pic {
-    text-align: center;
-    margin-top: 40px;
-  }
   
   .profile-pic img {
     width: 150px;
