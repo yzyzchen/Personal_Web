@@ -289,6 +289,15 @@ body {
   /* =====================
      PROFILE PICTURE
   ===================== */
+  .about-container {
+    display: flex;
+    align-items: center;   /* vertically align photo and text */
+    justify-content: space-between;
+    gap: 40px;             /* spacing between text and photo */
+    margin: 60px auto;
+    max-width: 900px;
+  }
+
   .profile-pic {
     flex: 1;               /* take less space */
     text-align: right;
