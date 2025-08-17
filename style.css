@@ -314,19 +314,6 @@ body {
   }
   
   /* =====================
-     PROFILE PICTURE
-  ===================== */
-  
-  .profile-pic img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* =====================
      HEADERS & SECTIONS
   ===================== */
   h1 {
