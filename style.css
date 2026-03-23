@@ -238,6 +238,16 @@ body {
     display: block;       /* ensures it's treated as a block */
     margin: 0 auto;       /* centers it horizontally */
   }
+
+  .project-video-embed {
+    display: block;
+    width: min(100%, 750px);
+    height: 420px;
+    margin: 10px auto 0;
+    border: 0;
+    border-radius: 8px;
+    background-color: #f4f7fa;
+  }
   
   /* Optional: Flex layout for side-by-side images (non-table) */
   .image-row {
@@ -253,6 +263,10 @@ body {
     .project-table td {
       display: block;
       width: 100%;
+    }
+
+    .project-video-embed {
+      height: 260px;
     }
   
     .image-row {
